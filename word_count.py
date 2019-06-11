@@ -1,18 +1,18 @@
 # MY SOLUTION
-def word_count(s):
-    s = s.lower()
-    list_s = s.split(' ')
-    dictionary = {}
+# def word_count(s):
+#     s = s.lower()
+#     list_s = s.split(' ')
+#     dictionary = {}
 
-    for word in list_s:
-        count = list_s.count(word)
-        dictionary.update({word: count})
+#     for word in list_s:
+#         count = list_s.count(word)
+#         dictionary.update({word: count})
 
-    return dictionary
+#     return dictionary
 
 
 
-print(word_count("I do not like it Sam I Am"))
+# print(word_count("I do not like it Sam I Am"))
 
 # TREEHOUSE COMMUNITY SOLUTION
 def word_count(a_str):

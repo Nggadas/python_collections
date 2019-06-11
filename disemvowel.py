@@ -8,4 +8,4 @@ def disemvowel(word):
 
     return ''.join(letters)
 
-print(disemvowel("emmauel"))
+print(disemvowel("alicktish"))
