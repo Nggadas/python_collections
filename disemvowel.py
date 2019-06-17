@@ -1,11 +1,8 @@
 def disemvowel(word):
     vowels = ['a', 'e', 'i', 'o', 'u']
-    letters = list(word)
-
-    for letter in word:
+    word = list(word)
+    for letter in word.copy():
         if letter.lower() in vowels:
-            letters.remove(letter)
+            word.remove(letter)
 
-    return ''.join(letters)
-
-print(disemvowel("alicktish"))
+    return "".join(word)
