@@ -1,5 +1,5 @@
 def packer(**kwargs):
-    print(kwargs)
+    return kwargs
 
 
 def unpacker(first_name=None, last_name=None):
@@ -9,5 +9,11 @@ def unpacker(first_name=None, last_name=None):
         print("Hi no name!")
 
 
-packer(name="John", num=42, spanish_inquisition=None)
-unpacker(**{"last_name": "Love", "first_name": "Kenneth"})
+# print(packer(name="John", num=42, spanish_iniquisition=None))
+# packed = packer(name="John", num=42, spanish_iniquisition=None)
+# unpacker(**{"last_name": "Doe", "first_name": "John"})
+
+course_minutes = {"Python Basics": 232, "Django Basics": 237, "Flask Basics": 189, "Java Basics": 133}
+
+for course, minutes in course_minutes.items():
+    print("{} is {} minutes long".format(course, minutes))

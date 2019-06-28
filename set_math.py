@@ -15,20 +15,22 @@ COURSES = {
 }
 
 
-def covers_all(arg):
-    course_list = []
-    for key, value in COURSES.items():
-        if (value & arg) == arg:
-            course_list.append(key)
-    return course_list
+def covers(topics):
+    courses = []
+    for course_title, topics_list in COURSES.items():
+        if topics.intersection(topics_list):
+            courses.append(course_title)
+
+    return courses
+
+
+def covers_all(topics):
+    courses = []
+    for course_title, topics_list in COURSES.items():
+        if topics.issubset(topics_list):
+            courses.append(course_title)
+
+    return courses
 
 
 print(covers_all({"conditions", "input"}))
-
-
-def covers(arg):
-    course_list = []
-    for key, value in COURSES.items():
-        if value & arg:
-            course_list.append(key)
-    return course_list

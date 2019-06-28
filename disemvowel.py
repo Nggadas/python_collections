@@ -6,3 +6,10 @@ def disemvowel(word):
             word.remove(letter)
 
     return "".join(word)
+
+
+
+
+
+
+
